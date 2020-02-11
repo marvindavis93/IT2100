@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -44,6 +44,7 @@
 				C2E4096423EDD6DF00CAD568 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		C2E4096423EDD6DF00CAD568 /* Products */ = {
 			isa = PBXGroup;
@@ -111,7 +112,7 @@
 				};
 			};
 			buildConfigurationList = C2E4095E23EDD6DF00CAD568 /* Build configuration list for PBXProject "Bullseye" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
