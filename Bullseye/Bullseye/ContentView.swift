@@ -10,8 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State var alertIsVisible: Bool = false
-    @State  var sliderValue : Double =  50.0
+    @State var alertIsVisible = false
+    @State  var sliderValue  =  50.0
+    @State var target = Int.random (in: 1...100)
+    @State var score = 0
+    @State var round = 1
+
 var body: some View {
         
    
@@ -23,7 +27,7 @@ var body: some View {
                 VStack {
                     HStack {
                         Text("Put the bullseye as close as you can to:")
-                        Text("100")
+                        Text ("\(target)")
                     }
                 }
                          
@@ -35,7 +39,7 @@ var body: some View {
             HStack{
                 Text("1")
                 
-                Slider(value: self.$sliderValue, in : 1...100)
+                Slider(value: $sliderValue, in : 1...100)
                 Text("100")
                 
             }
@@ -46,27 +50,46 @@ var body: some View {
     Button(action: {
         print("button pressed!")
         self.alertIsVisible = true
+        self.score = self.score + self.pointsForCurrentRound()
+        self.target = Int.random (in: 1...100)
     }) {
         Text("Hit me")
     }
     .alert(isPresented: $alertIsVisible)  { () ->
         Alert in
-        return Alert(title: Text("Hello There!"),
-                     message: Text ("The slider's value is  \(self.sliderValue)."),
-        dismissButton: .default(Text("Awesome!")));
+        
+        //let roundedValue = Int(sliderValue.rounded());
+        return Alert(title: Text(alertTitle()),
+                     message: Text ("The slider's value is  \(sliderValueRounded()).\n" +
+                        "You scored \(pointsForCurrentRound()) points this round."
+            
+            )
+                       ,
+                     dismissButton: .default(Text("Awesome!"))  {
+                        self.score = self.score + self.pointsForCurrentRound()
+                               self.target = Int.random (in: 1...100)
+                        self.round = self.round + 1
+                        
+        })
         }
             
             Spacer()
         //Score row
             HStack{
-                Text("Start over")
+                Button(action: {self.startNewGame()
+                }) {
+                    
+                    Text("Start over")
+               
+                }
+                
                 Spacer()
                 Text ("Score")
-                Text("999999")
+                Text("\(score)")
                 Spacer()
 
                 Text("Round")
-                Text("999")
+                Text ("\(round)")
                 Spacer()
                 Button(action: {} ) {
                     Text ("Info")
@@ -78,10 +101,60 @@ var body: some View {
         }
         
     }
+    
 }
+    func sliderValueRounded() -> Int {
+     return Int(sliderValue.rounded())
+    }
+    
+    func amountOff() -> Int {
+        abs(target - sliderValueRounded())
+    }
+    
+    
+        func pointsForCurrentRound () ->  Int {
+            
+       let maximumScore = 100
+            let difference = amountOff()
+            let bonus : Int
+            if difference == 0 {
+                bonus = 100
+            } else if difference == 1{
+                bonus = 50
+            }else {
+                bonus = 0
+            }
+             return maximumScore - difference + bonus
+            
+            
+            
+            
+            
+        }
+    func alertTitle() -> String {
+        let difference = abs(target - sliderValueRounded())
+        let title : String
+        if difference == 0 {
+            title = "Perfect!"
+    
+        } else if difference < 5 {
+            title = "You almost had it !"
+        } else if difference <= 10 {
+            title = "Not bad!"
+        } else {
+            title = "Are you even trying ?"
         
         
-        
+        }
+        return title
+    }
+
+    func startNewGame() {
+        score = 0
+        round = 1
+        sliderValue = 50.0
+        target = Int.random(in: 1...100)
+    }
         
         
         
@@ -95,6 +168,8 @@ struct ContentView_Previews: PreviewProvider {
         ContentView() .previewLayout( .fixed(width: 896, height: 414))
     }
 }
-
-
 }
+
+
+
+
