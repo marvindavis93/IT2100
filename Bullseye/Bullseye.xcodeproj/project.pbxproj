@@ -13,10 +13,11 @@
 		C2E4096D23EDD6E800CAD568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E4096C23EDD6E800CAD568 /* Assets.xcassets */; };
 		C2E4097023EDD6E800CAD568 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E4096F23EDD6E800CAD568 /* Preview Assets.xcassets */; };
 		C2E4097323EDD6E800CAD568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E4097123EDD6E800CAD568 /* LaunchScreen.storyboard */; };
+		C2F9B62024159C5700A239CE /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9B61F24159C5700A239CE /* AboutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C2E4096323EDD6DF00CAD568 /* Bullseye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bullseye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E4096323EDD6DF00CAD568 /* Bull's Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bull's Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E4096623EDD6DF00CAD568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E4096823EDD6DF00CAD568 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C2E4096A23EDD6DF00CAD568 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +25,7 @@
 		C2E4096F23EDD6E800CAD568 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2E4097223EDD6E800CAD568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2E4097423EDD6E800CAD568 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2F9B61F24159C5700A239CE /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +51,7 @@
 		C2E4096423EDD6DF00CAD568 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2E4096323EDD6DF00CAD568 /* Bullseye.app */,
+				C2E4096323EDD6DF00CAD568 /* Bull's Eye.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +62,7 @@
 				C2E4096623EDD6DF00CAD568 /* AppDelegate.swift */,
 				C2E4096823EDD6DF00CAD568 /* SceneDelegate.swift */,
 				C2E4096A23EDD6DF00CAD568 /* ContentView.swift */,
+				C2F9B61F24159C5700A239CE /* AboutView.swift */,
 				C2E4096C23EDD6E800CAD568 /* Assets.xcassets */,
 				C2E4097123EDD6E800CAD568 /* LaunchScreen.storyboard */,
 				C2E4097423EDD6E800CAD568 /* Info.plist */,
@@ -93,7 +96,7 @@
 			);
 			name = Bullseye;
 			productName = Bullseye;
-			productReference = C2E4096323EDD6DF00CAD568 /* Bullseye.app */;
+			productReference = C2E4096323EDD6DF00CAD568 /* Bull's Eye.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F9B62024159C5700A239CE /* AboutView.swift in Sources */,
 				C2E4096723EDD6DF00CAD568 /* AppDelegate.swift in Sources */,
 				C2E4096923EDD6DF00CAD568 /* SceneDelegate.swift in Sources */,
 				C2E4096B23EDD6DF00CAD568 /* ContentView.swift in Sources */,
@@ -294,7 +298,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lab2.Bullseye;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = lab2.Bullseye;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Bull's Eye";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
