@@ -1,17 +1,15 @@
 //
 //  AppDelegate.swift
-//  Bullseye3.0
+//  Bull's Eye 2
 //
-//  Created by Marv Davis on 3/28/20.
+//  Created by Marv Davis on 4/10/20.
 //  Copyright © 2020 Marv Davis. All rights reserved.
 //
 
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate{
-    
-    var window : UIWindow?
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 

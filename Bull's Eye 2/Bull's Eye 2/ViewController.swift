@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Bullseye3.0
+//  Bull's Eye 2
 //
-//  Created by Marv Davis on 3/28/20.
+//  Created by Marv Davis on 4/10/20.
 //  Copyright © 2020 Marv Davis. All rights reserved.
 //
 
@@ -24,24 +24,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let roundedValue = slider.value.rounded()
         currentValue = Int(roundedValue)
-        startNewGame()
+        targetValue = Int.random(in: 1...100)
         
-        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
-        slider.setThumbImage(thumbImageNormal, for:.normal)
-        
-        
-        let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
-        slider.setThumbImage(thumbImageHighlighted, for:.highlighted)
-        
-        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
-        
-      let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
-        let trackLeftResizeable = trackLeftImage.resizableImage(withCapInsets: insets)
-        slider.setMinimumTrackImage(trackLeftResizeable, for: .normal)
-        
-        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
-               let trackRightResizeable = trackRightImage.resizableImage(withCapInsets: insets)
-               slider.setMinimumTrackImage(trackRightResizeable, for: .normal)
+        // Do any additional setup after loading the view.
     }
     @IBAction func showAlert (){
         
@@ -100,13 +85,6 @@ class ViewController: UIViewController {
         scoreLabel.text = String (score)
         roundLabel.text = String (round)
         
-        
     }
-    @IBAction func startNewGame(){
-        
-        score = 0
-        round = 0
-        startNewRound()
-}
 
 }
