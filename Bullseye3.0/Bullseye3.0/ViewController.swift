@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     var currentValue  = 0
     var targetValue = 0
     var score = 0
-    var round = 0
+    var round = 0 
     
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetLabel: UILabel!

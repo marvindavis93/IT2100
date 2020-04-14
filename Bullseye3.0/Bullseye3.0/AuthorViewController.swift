@@ -13,9 +13,10 @@ class AuthorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       
      
     }
-    @IBAction func Author() {
+    @IBAction func close() {
         dismiss(animated: true, completion: nil)
     }
 

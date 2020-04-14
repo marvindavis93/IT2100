@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bullseye3_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bull_s_Eye3_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,12 +161,12 @@
         <!--About View Controller-->
         <scene sceneID="fnR-Zb-ZTF">
             <objects>
-                <viewController id="jFh-KN-e6B" customClass="AboutViewController" customModule="Bullseye3_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jFh-KN-e6B" customClass="AboutViewController" customModule="Bull_s_Eye3_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jI-ml-slX">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="LUT-LY-Nhw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="TRy-eV-kMA">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjR-vJ-Bw1">
@@ -178,16 +178,7 @@
                                     <color key="titleColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4aL-O9-xa1" kind="presentation" id="wqX-RS-uXQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRJ-HS-mha">
-                                <rect key="frame" x="283.5" y="318" width="100" height="37"/>
-                                <state key="normal" title="Close" backgroundImage="Button-Normal">
-                                    <color key="titleColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="close" destination="jFh-KN-e6B" eventType="touchUpInside" id="Hyf-gX-2n4"/>
+                                    <segue destination="4aL-O9-xa1" kind="presentation" modalTransitionStyle="coverVertical" id="wqX-RS-uXQ"/>
                                 </connections>
                             </button>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUd-Tn-qhO">
@@ -198,33 +189,30 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRJ-HS-mha">
+                                <rect key="frame" x="283.5" y="318" width="100" height="37"/>
+                                <state key="normal" title="Close" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="close" destination="jFh-KN-e6B" eventType="touchUpInside" id="Hyf-gX-2n4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="vRJ-HS-mha" firstAttribute="top" secondItem="eUd-Tn-qhO" secondAttribute="bottom" constant="20" id="1od-Cv-hnv"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="leading" secondItem="Bet-sN-R5m" secondAttribute="leading" id="2aF-g9-vcz"/>
                             <constraint firstItem="Bet-sN-R5m" firstAttribute="trailing" secondItem="zjR-vJ-Bw1" secondAttribute="trailing" constant="20" id="4Vh-V7-xnO"/>
-                            <constraint firstItem="Bet-sN-R5m" firstAttribute="bottom" secondItem="LUT-LY-Nhw" secondAttribute="bottom" id="Ax1-AT-s4N"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="leading" secondItem="Bet-sN-R5m" secondAttribute="leading" id="Cbp-gQ-xwN"/>
-                            <constraint firstItem="Bet-sN-R5m" firstAttribute="trailing" secondItem="LUT-LY-Nhw" secondAttribute="trailing" id="DXs-bB-7KS"/>
                             <constraint firstItem="eUd-Tn-qhO" firstAttribute="leading" secondItem="Bet-sN-R5m" secondAttribute="leading" constant="20" id="FnO-Fj-tyF"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="top" secondItem="Bet-sN-R5m" secondAttribute="top" id="HQn-X6-jv2"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="bottom" secondItem="Bet-sN-R5m" secondAttribute="bottom" id="LWb-ru-UbW"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="trailing" secondItem="Bet-sN-R5m" secondAttribute="trailing" id="O5t-M6-coI"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="leading" secondItem="6jI-ml-slX" secondAttribute="leading" constant="20" symbolic="YES" id="PUS-Kg-rXc"/>
+                            <constraint firstItem="Bet-sN-R5m" firstAttribute="bottom" secondItem="TRy-eV-kMA" secondAttribute="bottom" id="PUv-Sv-I2g"/>
                             <constraint firstItem="Bet-sN-R5m" firstAttribute="trailing" secondItem="eUd-Tn-qhO" secondAttribute="trailing" constant="20" id="QAW-N2-cWH"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="leading" secondItem="6jI-ml-slX" secondAttribute="leading" constant="20" symbolic="YES" id="QTW-iD-cD1"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="bottom" secondItem="Bet-sN-R5m" secondAttribute="bottom" id="Tlg-ft-d9K"/>
-                            <constraint firstItem="Bet-sN-R5m" firstAttribute="trailing" secondItem="LUT-LY-Nhw" secondAttribute="trailing" id="UeR-7i-I58"/>
+                            <constraint firstItem="TRy-eV-kMA" firstAttribute="leading" secondItem="Bet-sN-R5m" secondAttribute="leading" id="Stx-hY-9eW"/>
                             <constraint firstItem="eUd-Tn-qhO" firstAttribute="top" secondItem="Bet-sN-R5m" secondAttribute="top" constant="20" id="V58-J1-zdC"/>
+                            <constraint firstItem="Bet-sN-R5m" firstAttribute="trailing" secondItem="TRy-eV-kMA" secondAttribute="trailing" id="Wuo-tB-wXw"/>
                             <constraint firstItem="Bet-sN-R5m" firstAttribute="bottom" secondItem="zjR-vJ-Bw1" secondAttribute="bottom" constant="20" id="ZCf-Jy-pgG"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="top" secondItem="6jI-ml-slX" secondAttribute="top" constant="20" symbolic="YES" id="ZHj-Nf-TBQ"/>
+                            <constraint firstItem="TRy-eV-kMA" firstAttribute="top" secondItem="Bet-sN-R5m" secondAttribute="top" id="cgj-Rf-334"/>
                             <constraint firstItem="vRJ-HS-mha" firstAttribute="centerX" secondItem="6jI-ml-slX" secondAttribute="centerX" id="ljE-I4-GWu"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="trailing" secondItem="Bet-sN-R5m" secondAttribute="trailing" id="obc-s8-ChL"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="top" secondItem="Bet-sN-R5m" secondAttribute="top" id="tdQ-pz-i7G"/>
                             <constraint firstItem="Bet-sN-R5m" firstAttribute="bottom" secondItem="vRJ-HS-mha" secondAttribute="bottom" constant="20" id="ugF-QL-aOQ"/>
-                            <constraint firstItem="Bet-sN-R5m" firstAttribute="bottom" secondItem="LUT-LY-Nhw" secondAttribute="bottom" id="xil-Uf-LCI"/>
-                            <constraint firstItem="LUT-LY-Nhw" firstAttribute="top" secondItem="6jI-ml-slX" secondAttribute="top" constant="20" symbolic="YES" id="xzS-mf-JLD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bet-sN-R5m"/>
                     </view>
@@ -239,7 +227,7 @@
         <!--Author View Controller-->
         <scene sceneID="0dS-Xp-oO1">
             <objects>
-                <viewController modalTransitionStyle="partialCurl" id="4aL-O9-xa1" customClass="AuthorViewController" customModule="Bullseye3_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" id="4aL-O9-xa1" customClass="AuthorViewController" customModule="Bull_s_Eye3_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wnw-qZ-JdT">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,9 +240,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKm-gY-bGx">
-                                <rect key="frame" x="257" y="197" width="39" height="30"/>
+                                <rect key="frame" x="293" y="263" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Close"/>
+                                <connections>
+                                    <action selector="close" destination="4aL-O9-xa1" eventType="touchUpInside" id="AMO-y1-m2W"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
