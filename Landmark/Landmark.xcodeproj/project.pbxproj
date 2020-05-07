@@ -6,24 +6,19 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		C20FDF1E24645C200042DE37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20FDF1D24645C200042DE37 /* AppDelegate.swift */; };
-		C20FDF2024645C200042DE37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20FDF1F24645C200042DE37 /* SceneDelegate.swift */; };
-		C20FDF2224645C200042DE37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20FDF2124645C200042DE37 /* ContentView.swift */; };
-		C20FDF2424645C2B0042DE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20FDF2324645C2B0042DE37 /* Assets.xcassets */; };
-		C20FDF2724645C2B0042DE37 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20FDF2624645C2B0042DE37 /* Preview Assets.xcassets */; };
-		C20FDF2A24645C2B0042DE37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20FDF2824645C2B0042DE37 /* LaunchScreen.storyboard */; };
-/* End PBXBuildFile section */
+/* Begin PBXContainerItemProxy section */
+		C20FDFD1246479AF0042DE37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C20FDFCD246479AE0042DE37 /* BuildingListsAndNavigation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7394862229F194000C47603;
+			remoteInfo = Landmarks;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C20FDF1A24645C200042DE37 /* Landmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C20FDF1D24645C200042DE37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C20FDF1F24645C200042DE37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C20FDF2124645C200042DE37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C20FDF2324645C2B0042DE37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C20FDF2624645C2B0042DE37 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C20FDF2924645C2B0042DE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C20FDF2B24645C2B0042DE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C20FDFCD246479AE0042DE37 /* BuildingListsAndNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BuildingListsAndNavigation.xcodeproj; path = ../BuildingListsAndNavigation.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +35,7 @@
 		C20FDF1124645C200042DE37 = {
 			isa = PBXGroup;
 			children = (
-				C20FDF1C24645C200042DE37 /* Landmark */,
+				C20FDFCD246479AE0042DE37 /* BuildingListsAndNavigation.xcodeproj */,
 				C20FDF1B24645C200042DE37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,26 +48,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C20FDF1C24645C200042DE37 /* Landmark */ = {
+		C20FDFCE246479AE0042DE37 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C20FDF1D24645C200042DE37 /* AppDelegate.swift */,
-				C20FDF1F24645C200042DE37 /* SceneDelegate.swift */,
-				C20FDF2124645C200042DE37 /* ContentView.swift */,
-				C20FDF2324645C2B0042DE37 /* Assets.xcassets */,
-				C20FDF2824645C2B0042DE37 /* LaunchScreen.storyboard */,
-				C20FDF2B24645C2B0042DE37 /* Info.plist */,
-				C20FDF2524645C2B0042DE37 /* Preview Content */,
+				C20FDFD2246479AF0042DE37 /* Landmarks.app */,
 			);
-			path = Landmark;
-			sourceTree = "<group>";
-		};
-		C20FDF2524645C2B0042DE37 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C20FDF2624645C2B0042DE37 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +102,12 @@
 			mainGroup = C20FDF1124645C200042DE37;
 			productRefGroup = C20FDF1B24645C200042DE37 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C20FDFCE246479AE0042DE37 /* Products */;
+					ProjectRef = C20FDFCD246479AE0042DE37 /* BuildingListsAndNavigation.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C20FDF1924645C200042DE37 /* Landmark */,
@@ -128,14 +115,21 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		C20FDFD2246479AF0042DE37 /* Landmarks.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Landmarks.app;
+			remoteRef = C20FDFD1246479AF0042DE37 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		C20FDF1824645C200042DE37 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20FDF2A24645C2B0042DE37 /* LaunchScreen.storyboard in Resources */,
-				C20FDF2724645C2B0042DE37 /* Preview Assets.xcassets in Resources */,
-				C20FDF2424645C2B0042DE37 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,24 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20FDF1E24645C200042DE37 /* AppDelegate.swift in Sources */,
-				C20FDF2024645C200042DE37 /* SceneDelegate.swift in Sources */,
-				C20FDF2224645C200042DE37 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C20FDF2824645C2B0042DE37 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C20FDF2924645C2B0042DE37 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C20FDF2C24645C2B0042DE37 /* Debug */ = {
